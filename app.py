@@ -43,7 +43,7 @@ fignew = px.line(new_df, x='Year',y='Renewable Energy Cons % of Total Energy Con
 st.plotly_chart(fignew) # show the chart
 
 #setting the year selection
-Years = st.selectbox('Choose Year', list(df['Year'].unique())
+Years = st.selectbox('Choose Year', list(df['Year'].unique()))
 year_df = df[df['Year']==Years] # this is a new dataframe filtered by the choice of year
 figmap = px.choropleth(year_df,locations="Country Code",               
               color="Renewable Energy Cons % of Total Energy Cons",
