@@ -77,4 +77,6 @@ Wood is technically renewable, but using too much of it as fuel could lead to de
 But we should not be too quick to dismiss the data on this basis. Many developing countries are investing in better renewable energy technology nowadays.
 
 The Renewables Global Status Report (https://ren21.net/gsr-2019/) (GSR), released annually by the Renewable Energy Policy Network for the 21st Century (REN21, a think tank) is a detailed report on the the different sources of renewable energy, their growth rates, and how various countries are using renewable energy.
+
+I hope you liked playing around with this visualisation. Check out my LinkedIn profile at https://www.linkedin.com/in/shantalamukherjee/.
 """
