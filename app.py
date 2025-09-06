@@ -41,14 +41,14 @@ Regions = st.multiselect('Choose Country or Region', list(df['Country Name'].uni
 new_df = df[df['Country Name'].isin(Regions)] # this is a new dataframe filtered by the choices in the dropdown
 
 #create the new plotly express chart based on this dataframe
-fignew = px.line(new_df, x='Year',y='Renewable Energy Cons % of Total Energy Cons',color='Country Name', width = 1100)  #plots an interactive line chart with the data filtered on the country name
+fignew = px.line(new_df, x='Year',y='Value',color='Country Name', width = 1100)  #plots an interactive line chart with the data filtered on the country name
 st.plotly_chart(fignew) # show the chart
 
 #setting the year selection
 Years = st.selectbox('Choose Year', list(df['Year'].unique()))
 year_df = df[df['Year']==Years] # this is a new dataframe filtered by the choice of year
 figmap = px.choropleth(year_df,locations="Country Code",               
-              color="Renewable Energy Cons % of Total Energy Cons",
+              color="Value",
               hover_name="Country Name",   
               color_continuous_scale='Greens',width=1100, height = 500) #plots a choropleth chart with the data filtered on the year
 
