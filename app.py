@@ -2,32 +2,34 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import plotly.express as px
-url_view = 'https://drive.google.com/file/d/16YGHVk6p6F7mAMikowqg8CCSeNUsLHc4/view?usp=sharing' 
+#url_view = 'https://drive.google.com/file/d/16YGHVk6p6F7mAMikowqg8CCSeNUsLHc4/view?usp=sharing' 
 #Link to the unzipped csv file (with top description lines removed) stored in my Google drive. Anybody with this link can view the csv data file.
-path = 'https://drive.google.com/uc?export=download&id='+url_view.split('/')[-2] #path to access the file
+#path = 'https://drive.google.com/uc?export=download&id='+url_view.split('/')[-2] #path to access the file
 
 #read in the csv file into a dataframe
-dfraw = pd.read_csv(path)
+#dfraw = pd.read_csv(path)
 
 #perform the next few steps to make the dataframe tidy
-dfraw = dfraw.dropna(axis=1, how='all') #drop columns with no non-null values
-cols = ['Indicator Name', 'Indicator Code'] #making a list of unnecessary columns that will be dropped
-dfraw = dfraw.drop(cols, axis=1)
+#dfraw = dfraw.dropna(axis=1, how='all') #drop columns with no non-null values
+#cols = ['Indicator Name', 'Indicator Code'] #making a list of unnecessary columns that will be dropped
+#dfraw = dfraw.drop(cols, axis=1)
 
 # Now we will melt the dataframe so that it is long-form
-df = pd.melt(dfraw, id_vars=['Country Name','Country Code'],var_name='Year',value_name='Renewable Energy Cons % of Total Energy Cons')
-df['Year'] = pd.to_numeric(df['Year']) #setting the Year column datatype to numeric
+#df = pd.melt(dfraw, id_vars=['Country Name','Country Code'],var_name='Year',value_name='Renewable Energy Cons % of Total Energy Cons')
+#df['Year'] = pd.to_numeric(df['Year']) #setting the Year column datatype to numeric
 
 # The dataframe is now tidy and ready to use. 
+
+df = pd.read_csv('renewable_energy_long_format.csv')
 
 # Add the introductory remarks
 st.title('World Bank Data on Renewable Energy Consumption as a Percentage of Total Energy Consumption')
 st.write('We will be working with the Renewable Energy Consumption (% Of Total Final Energy Consumption) dataset from the World Bank. This interactive visualisation is created in Python using Plotly Express and Streamlit.')
 st.header('Attribution' )
-st.subheader('The World Bank (https://datacatalog.worldbank.org)')
+st.subheader('The World Bank (https://worldbank.org)')
 
 st.subheader('Dataset Name')
-st.write('Renewable Energy Consumption (% of Total Final Energy Consumption) (https://databank.worldbank.org/reports.aspx?source=2&series=EG.FEC.RNEW.ZS)')
+st.write('Renewable Energy Consumption (% of Total Final Energy Consumption) (https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS)')
 
 st.subheader('Data Source')
 st.write('World Bank, Sustainable Energy for All (SE4ALL) database from the SE4ALL Global Tracking Framework led jointly by the World Bank, International Energy Agency, and the Energy Sector Management Assistance Program.')
