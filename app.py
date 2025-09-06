@@ -60,7 +60,7 @@ st.plotly_chart(figmap)
 
 Play around with the countries and the years to see what percentage of the total energy consumption was from renewable energy sources.
 
-I will just point out some observations below. Keep in mind that the data only spans 1990 to 2021 for most countries, so there may have been significant developments in the last five years!
+I will just point out some observations below. Keep in mind that the data only spans 1990 to 2021 for most countries, so there may have been significant developments in the last three years!
 
 * Richer, developed countries generally have a low 
 percentage of their total energy coming from renewable sources, though some of them show an increasing trend.
