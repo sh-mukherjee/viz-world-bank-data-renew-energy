@@ -60,20 +60,20 @@ st.plotly_chart(figmap)
 
 Play around with the countries and the years to see what percentage of the total energy consumption was from renewable energy sources.
 
-I will just point out some observations below. Keep in mind that the data only spans 1990 to 2015, so there may have been significant developments in the last five years!
+I will just point out some observations below. Keep in mind that the data only spans 1990 to 2021 for most countries, so there may have been significant developments in the last five years!
 
 * Richer, developed countries generally have a low 
 percentage of their total energy coming from renewable sources, though some of them show an increasing trend.
 
-* Norway and Iceland, who make use of geothermal energy, have a higher proportion of their consumption coming from renewable energy.
+* Iceland, which makes use of geothermal energy, has a higher proportion of its consumption coming from renewable energy.
 
-* Many poorer and less-developed countries have MUCH higher levels of renewable energy consumption as a percentage of their total energy consumption, see Nepal for example.
+* Many poorer and less-developed countries have MUCH higher levels of renewable energy consumption as a percentage of their total energy consumption, see Nepal, for example.
 
 * This could be due to a combination of hydroelectric power for industrial power generation and the use of biomass for domestic energy needs.
 
 * The line charts for India and China show a decreasing trend over the years as they have grown richer, perhaps due to rapidly increasing energy demand that cannot be satisfied fast enough by renewable energy.
 
-All of this gives us a lot to think about. We should keep in mind that 'renewable' does not necessarily mean 'clean' or 'sustainable' or 'environmentally friendly'.
+All of this gives us a lot to think about. We should keep in mind that 'renewable' does not necessarily mean 'clean', 'sustainable', or 'environmentally friendly'.
 Wood is technically renewable, but using too much of it as fuel could lead to deforestation, and domestic use for cooking produces indoor pollution that has negative effects on the health of household members. Hydroelectric power also has its own challenges with respect to negative environmental consequences.
 
 But we should not be too quick to dismiss the data on this basis. Many developing countries are investing in better renewable energy technology nowadays.
